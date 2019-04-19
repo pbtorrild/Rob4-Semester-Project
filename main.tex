@@ -1,0 +1,49 @@
+\documentclass{report}
+
+\input{Setup/Preample.tex}
+\input{Setup/Hyphenations.tex}
+\input{Setup/Macros.tex}
+\begin{document}
+
+%Todos
+%\listoftodos
+%frontmatter
+\pagestyle{empty} %disable headers and footers
+\pagenumbering{Roman} %use roman page numbering in the frontmatter
+\input{Sections/AAU/Frontpage.tex}
+\input{Sections/AAU/Colophon.tex}
+\addcontentsline{toc}{chapter}{Abstract} 
+\input{Sections/AAU/Titlepages.tex}
+
+\pdfbookmark[0]{Contents}{label:contents}
+\pagestyle{fancy} %enable headers and footers again
+\tableofcontents
+\input{Sections/AAU/Preface.tex}
+%mainmatter
+\pagenumbering{arabic} %use arabic page numbering in the mainmatter
+
+%Normal Sections
+\input{Sections/Problem_Analysis/Introduction.tex}
+
+
+\input{Sections/Problem_Analysis/Market_analysis.tex}
+\input{Sections/Problem_Analysis/Safety.tex}
+\input{Sections/Problem_Analysis/Sensors.tex}
+\input{Sections/Problem_Analysis/PAConclusion.tex}
+
+\input{Sections/Design/Hardware.tex}
+\input{Sections/Design/Software.tex}
+
+\input{Sections/Implementation/Implementation.tex}
+
+
+\input{Sections/Conclusion.tex}
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography
+\appendix
+
+%appendix below¨
+
+\end{document}

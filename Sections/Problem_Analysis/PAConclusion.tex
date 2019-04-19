@@ -1,0 +1,99 @@
+\chapter{Problem analysis conclusion}
+As mentioned before in the introduction \ref{ch:Introduction}, the focus of this project is to investigate and develop an autonomous car, which can perceive the surroundings and interpret it.\\
+The problem analysis went into technologies regarding autonomous vehicles that already exist (\ref{Existing technologies}) as well as specifying the  different levels of autonomy existing and the difference between Self-Driving Vehicles and Automated Guided Vehicles. Furthermore, the safety section (\ref{Safety}) looked into regulations and the legislation (\ref{Regulationslegislations}) that comes with autonomous vehicles, followed by an analysis of the environment and obstacles such a vehicle would come into contact with (\ref{Environmentobstacles}) and finished with a risk assessment evaluating the dangers involving these cars (\ref{riskassessment}). Regulations and legislation looked into the Danish traffic laws in order to understand how the vehicle should act on the road. Another aspect investigated was if an autonomous car is even legal to drive. In Denmark it is currently illegal, however, some places around the world it has already been made legal, like certain cities in Germany, England and the US. It is a topic in Denmark, but the main issue is where to put the responsibility in case of a crash. The ethics regarding autonomous vehicles were reviewed in \ref{Ethics}. It dealt with the dilemmas of car crashes, who or what should the car choose to hit in unfortunate situations and who would be responsible if something happened like this. It was difficult to conclude anything specific, however important to understand and include when creating laws for autonomous cars \todo{add something about ethics commission}. Lastly the section sensors (\ref{sensors}) looked into different advantages and disadvantages of sensors that potentially could be used with autonomous cars. \\
+From the problem analysis it is possible to form the derived project requirements as well as delimitations for this project.    
+
+
+\section{Derived Project Requirements}
+The following requirements have been derived from the problem analysis, and in best case scenario, should all be implemented in the design of the robot.
+\begin{enumerate}
+
+\item The autonomous car has to have cruise control in order to be called autonomous.
+
+\item The car has to be able to drive on its own with or without driver.
+
+\item The car should be able to drive itself in any weather conditions.
+
+\item The car should be able to detect obstacles in any weather condition
+
+\item The car should be able to avoid detected obstacles.
+
+\item The car should be able to classify when an object is either a person, an animal, a car, and has to be able to classify every traffic sign.
+
+\item The car has to follow traffic laws such as stay within a lane and stop at traffic lights.
+
+\item Safety features have to be implemented in order to limit the damage of a crash as much as possible.
+
+\item The safety features have follow the guidelines described in the ethics section according to the Ethics Commission appointed by the German Federal Minister of Transport and Digital Infrastructure. \todo[inline]{The report from the ethics commission will be added in the ethic section soon}
+
+\item The car should be able to adapt the speed to any weather and road condition.
+
+\todo[inline]{Requirements from the sensor section will follow...}
+
+\end{enumerate}
+
+When creating a autonomous car the derived project requirements have to be taken into consideration. However, due to this project being made by fourth-semester students at Aalborg University, there exist a few delimitations that will influence the final solution of the project.
+
+%To create the apotheosis arrangement these request ought to be taken after. In any case, this project is rearranging by third-semester students the creative ability accessible for this venture might not fit the perfect need. In this manner, a few delimitations follow.
+
+
+
+
+\section{Delimitation} 
+Delimitations are going to describe which and why some of the derived project requirements are not able to be fulfilled:
+
+\begin{itemize}
+
+\item This project does not have real car as a tool to work with. Instead of the car this project is going to work with is the "TurtleBot 3" provided by AAU. %The TurtleBot is using a Raspberry Pi 3 model B and an OpenCR board for processing. It uses two dynamixel servos for wheels.
+
+\item Processing power of the TurtleBot is limited because of the Raspberry Pi 3 being used. 
+
+\item The design of the TurtleBot is pre-made. As such the possibility for hardware customisation is limited.
+
+\end{itemize}
+
+
+
+
+\section{Case}
+The project proposal given by AAU is creating an autonomous car with focus being on its sensing systems and that being able to detect live obstacles and make the car avoid them. The car will in this case be a TurtleBot 3 Burger model. Even tho (as described in \ref{Existing technologies}) companies are already making autonomous vehicles this technology is still in tentative beginnings there is much research yet to be done before autonomous cars will become common property. Navigation, communication and sensing are topics, which are being studied and expanded upon in order to make these vehicles safer, more reliable and more efficient. A challenging problem is to detect and avoid obstacles in motion in all types of weather. This could be animals, humans or cars, which are highly relevant for autonomous cars.\\
+The scope for this project concerns the sensing and perceiving of the TurtleBot. The choice of sensors will be investigated and decided on later, but for the perception part some criteria will be established here. In order for the TurtleBot to even be considered autonomous it has make a variety of decisions automatically. It also has to follow the law to be considered legal. The focus will therefore be on the TurtleBot being able to identify different traffic signs and act accordingly. This will be a feature that autonomous cars in general will need in order to drive on the roads
+
+
+
+
+\section{Revised requirements}
+ 
+According to the derived project requirements and delimitations the revised requirements for this project could be made.\\
+The TurtleBot...
+ 
+\begin{itemize}
+
+\item (should have autonomy level 4)
+
+\item should be able to detect obstacles.
+
+\item should be able to avoid detected obstacles, with a focus on avoiding impact with living obstacles.
+
+\item has to follow traffic laws.
+
+\item has to be able classify when an object is either a person or a car as well as different traffic signs.
+
+\item should be able to detect obstacles and signs in any weather and lighting conditions.
+
+\item should be able to follow a road autonomously.
+
+\item should be able to determine the distance from itself to any object in range. 
+
+%\item The distance detecting obstacles and objects should be the same as breaking distance.
+
+\end{itemize}
+
+%After revised requirements are made the final problem formulation can be set.
+
+
+
+\section{Final Problem Formulation}
+\textit{How can a perception system of an autonomous car be showcased by a TurtleBot 3}
+\\
+\textit{How can a TurtleBot simulate an autonomous car, how can it sense and classify its surroundings and react appropriately?}
